@@ -1,11 +1,11 @@
 api = 1
 name = "make-build"
-version = "0.2.0"
+version = "0.3.0"
 description = "Compila con make cada carpeta que tenga un Makefile"
 requires = ["make"]
 
 [type]
 scanned = true
 detect = ["**/Makefile"]
-command = "make"
+command = "make -j2"
 dry_run = "make --dry-run"
